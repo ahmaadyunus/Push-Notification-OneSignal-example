@@ -1,9 +1,12 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.onesignalhandler;
 
 import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.ahmaadyunus.onesignalexample.MyApplication;
+import com.example.ahmaadyunus.onesignalexample.activity.AnotherActivity;
+import com.example.ahmaadyunus.onesignalexample.activity.MainActivity;
 import com.onesignal.OSNotificationAction;
 import com.onesignal.OSNotificationOpenResult;
 import com.onesignal.OneSignal;

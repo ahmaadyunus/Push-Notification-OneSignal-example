@@ -1,10 +1,12 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.onesignalhandler;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.example.ahmaadyunus.onesignalexample.MyApplication;
+import com.example.ahmaadyunus.onesignalexample.R;
 import com.onesignal.NotificationExtenderService;
 import com.onesignal.OSNotificationDisplayedResult;
 import com.onesignal.OSNotificationReceivedResult;

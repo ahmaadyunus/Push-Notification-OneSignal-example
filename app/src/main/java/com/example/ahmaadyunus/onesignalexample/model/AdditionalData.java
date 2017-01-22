@@ -1,4 +1,4 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.model;
 
 /**
  * Created by ahmaadyunus on 22/01/17.

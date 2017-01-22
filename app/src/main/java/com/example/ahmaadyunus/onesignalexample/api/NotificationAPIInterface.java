@@ -1,4 +1,7 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.api;
+
+import com.example.ahmaadyunus.onesignalexample.model.NotifResponse;
+import com.example.ahmaadyunus.onesignalexample.model.Notification;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

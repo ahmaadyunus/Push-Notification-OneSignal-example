@@ -3,6 +3,8 @@ package com.example.ahmaadyunus.onesignalexample;
 import android.app.Application;
 import android.content.Context;
 
+import com.example.ahmaadyunus.onesignalexample.onesignalhandler.MyNotificationOpenedHandler;
+import com.example.ahmaadyunus.onesignalexample.onesignalhandler.MyNotificationReceivedHandler;
 import com.onesignal.OneSignal;
 
 /**

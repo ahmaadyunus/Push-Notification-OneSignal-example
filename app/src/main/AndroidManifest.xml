@@ -13,16 +13,16 @@
         <meta-data
             android:name="com.onesignal.NotificationOpened.DEFAULT"
             android:value="DISABLE" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnotherActivity"></activity>
+        <activity android:name=".activity.AnotherActivity"></activity>
         <service
-            android:name=".MyNotificationExtenderService"
+            android:name=".onesignalhandler.MyNotificationExtenderService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.onesignal.NotificationExtender" />

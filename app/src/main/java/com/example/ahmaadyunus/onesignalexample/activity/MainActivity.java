@@ -1,31 +1,26 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.onesignal.OSNotificationOpenResult;
-import com.onesignal.OneSignal;
+import com.example.ahmaadyunus.onesignalexample.api.NotificationAPIInterface;
+import com.example.ahmaadyunus.onesignalexample.R;
+import com.example.ahmaadyunus.onesignalexample.model.AdditionalData;
+import com.example.ahmaadyunus.onesignalexample.model.Contents;
+import com.example.ahmaadyunus.onesignalexample.model.NotifResponse;
+import com.example.ahmaadyunus.onesignalexample.model.Notification;
 
-import org.json.JSONObject;
-
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.widget.Toast.LENGTH_SHORT;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void push(){
         try {
-            String restApiKey ="Basic Zjg1OGU5MzgtZjY4Mi00NjgyLTg2ZTYtZGZlZmEyNzdiNDE3";
+            String restApiKey ="Basic YOUR_REST_API_KEY_ONESIGNAL_APPLICATION";
             String contentType="application/json";
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://private-80e9a-android23.apiary-mock.com/users/")
+                    .baseUrl("https://onesignal.com/api/v1/notifications/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
             NotificationAPIInterface notif_api = retrofit.create(NotificationAPIInterface.class);
@@ -58,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             incSegments.add("All");
             contents.setEn("Test notification using Retrofit2");
             additionalData.setActivityToBeOpened("AnotherActivity");
-            notification.setAppId("8fcf6acf-7ac1-4c0a-b4e2-5ade701d522d");
+            notification.setAppId("YOUR_ONESIGNAL_APPID");
             notification.setContents(contents);
             notification.setAdditionalData(additionalData);
             notification.setIncludedSegments(incSegments);

@@ -1,5 +1,7 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.model;
 
+import com.example.ahmaadyunus.onesignalexample.model.AdditionalData;
+import com.example.ahmaadyunus.onesignalexample.model.Contents;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

@@ -1,7 +1,9 @@
-package com.example.ahmaadyunus.onesignalexample;
+package com.example.ahmaadyunus.onesignalexample.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.ahmaadyunus.onesignalexample.R;
 
 public class AnotherActivity extends AppCompatActivity {
 

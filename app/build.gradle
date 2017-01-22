@@ -12,8 +12,8 @@ android {
 
 
         manifestPlaceholders = [manifestApplicationId: "${applicationId}",
-                                onesignal_app_id: "8fcf6acf-7ac1-4c0a-b4e2-5ade701d522d",
-                                onesignal_google_project_number: "290329822777"]
+                                onesignal_app_id: "YOUR_ONESIGNAL_APP_ID",
+                                onesignal_google_project_number: "YOUR_GOOGLE_SERVER_API_KEY"]
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
